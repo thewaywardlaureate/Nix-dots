@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+input=$(rofi -dmenu -dmenu -multi-select -sep '\n' -p "Enter your search string")
+
+librewolf 'https://en.wikipedia.org/wiki/'$input
+

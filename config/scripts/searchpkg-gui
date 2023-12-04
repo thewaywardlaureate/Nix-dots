@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+input=$(rofi -dmenu -p "Enter the name of the package")
+
+librewolf 'https://search.nixos.org/packages?channel=unstable&show=nchat&from=0&size=50&sort=relevance&type=packages&query='$input
+
